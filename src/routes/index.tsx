@@ -128,7 +128,7 @@ function SalesPage() {
               Te has prometido mil veces que mañana será distinto. Y mañana se repite.
             </p>
             <p className="text-[20px] md:text-[22px] italic font-medium my-8" style={{ color: "var(--gold-deep)", fontFamily: "var(--font-display)" }}>
-              "No estás sola, Mariana."
+              "No estás sola, Pao."
             </p>
             <p className="text-[17px]" style={{ color: "var(--foreground)" }}>
               Yo viví esto durante años. Hasta que entendí que el problema no era mi hijo, ni yo.
@@ -237,33 +237,8 @@ function SalesPage() {
         </div>
       </section>
 
-      {/* SOCIAL PROOF */}
-      <section className="section-y" style={{ background: "var(--cream)" }}>
-        <div className="container-page">
-          <SectionHeading kicker="Lo que dicen" title="Madres reales, casas más calmas." />
-          <div className="max-w-3xl mx-auto bg-white rounded-3xl p-8 md:p-10 relative border" style={{ borderColor: "var(--gold-soft)", boxShadow: "var(--shadow-card)" }}>
-            <Quote size={48} className="absolute -top-4 left-8" color="var(--gold)" fill="var(--gold)" />
-            <p className="text-[18px] md:text-[20px] leading-relaxed mb-6" style={{ color: "var(--foreground)" }}>
-              Al cuarto día mi hija de 7 años apagó la tablet sola y me dijo "mami, ¿jugamos?". Lloré.
-              Lloré porque había pasado meses peleando por eso. El método es tan simple que parece imposible
-              que funcione — y funciona.
-            </p>
-            <div className="flex items-center gap-4">
-              <div className="w-12 h-12 rounded-full" style={{ background: "var(--gold-soft)" }} />
-              <div>
-                <div className="font-semibold">Laura M., 34 años</div>
-                <div className="text-sm" style={{ color: "var(--text-secondary)" }}>Diseñadora · mamá de Camila (7)</div>
-              </div>
-            </div>
-          </div>
-          <p className="text-center font-display font-semibold text-xl md:text-2xl mt-10">
-            Si Laura pudo, tú también.
-          </p>
-        </div>
-      </section>
-
       {/* GARANTÍA */}
-      <section className="section-y">
+      <section className="section-y" style={{ background: "var(--cream)" }}>
         <div className="container-page max-w-3xl">
           <div className="rounded-3xl p-8 md:p-10 text-center border-2" style={{ borderColor: "var(--gold)", background: "linear-gradient(180deg, #fff, var(--cream))" }}>
             <div className="w-20 h-20 rounded-full grid place-items-center mx-auto mb-5" style={{ background: "var(--cream)" }}>
@@ -281,7 +256,7 @@ function SalesPage() {
       </section>
 
       {/* NO ES PARA TI */}
-      <section className="section-y" style={{ background: "var(--cream-dark)" }}>
+      <section className="section-y">
         <div className="container-page max-w-3xl">
           <SectionHeading kicker="Honestidad primero" title="Este libro NO es para ti si…" />
           <ul className="space-y-4 bg-white rounded-2xl p-7" style={{ boxShadow: "var(--shadow-card)" }}>
@@ -313,14 +288,12 @@ function SalesPage() {
           </SectionHeading>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
             {[
-              { icon: <BookOpen />, t: "Ebook E.C.E.", d: "120 páginas, claras y al grano." },
-              { icon: <Calendar />, t: "Plan de 7 días", d: "Una acción por noche, paso a paso." },
+              { icon: <BookOpen />, t: "Ebook E.C.E.", d: "20 páginas, claras y al grano." },
+              { icon: <Calendar />, t: "Plan de 7 días", d: "Una acción por día, paso a paso." },
               { icon: <MessageSquare />, t: "Guion de frases", d: "Qué decir cuando hay rabieta." },
-              { icon: <FileText />, t: "Cuaderno imprimible", d: "Para registrar el progreso en familia." },
+              { icon: <FileText />, t: "Acuerdo Digital Familiar imprimible", d: "Llénalo en familia y fírmalo juntos." },
               { icon: <ListChecks />, t: "Checklist diaria", d: "Para mantener el método después." },
-              { icon: <HeartHandshake />, t: "Guía para pareja", d: "Cómo alinear a los dos adultos." },
-              { icon: <Sparkles />, t: "20 actividades sin pantalla", d: "Para niños 5-9 años, por edad." },
-              { icon: <MessageCircle />, t: "Audio de bolsillo", d: "30 min para escuchar yendo al trabajo." },
+              { icon: <Sparkles />, t: "30 actividades sin pantalla", d: "Para niños 5-9 años, por edad." },
             ].map((c, i) => (
               <div key={i} className="bg-white rounded-2xl p-6 text-center border" style={{ borderColor: "var(--cream-dark)", boxShadow: "var(--shadow-card)" }}>
                 <div className="w-14 h-14 rounded-2xl grid place-items-center mx-auto mb-4" style={{ background: "var(--cream)", color: "var(--gold-deep)" }}>
@@ -337,11 +310,11 @@ function SalesPage() {
       {/* BONIFICACIONES */}
       <section className="section-y" style={{ background: "linear-gradient(180deg, #fff, color-mix(in oklab, var(--gold-soft) 35%, white))" }}>
         <div className="container-page">
-          <SectionHeading kicker="Bonus" title="Dos regalos extra, solo hoy." />
+          <SectionHeading kicker="Bonus" title="Bonos Extras, Gratis" />
           <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
             {[
-              { t: "Mini-curso en video: 'La conversación de 5 minutos'", d: "3 videos cortos en los que te muestro, frente a cámara, cómo tener la conversación que cambia el patrón.", val: "$29" },
-              { t: "Plantillas de rutinas familiares", d: "12 plantillas editables para mañanas, tardes y noches. Listas para imprimir y pegar en la nevera.", val: "$19" },
+              { t: "Cómo mantener la calma cuando ya vas a gritar", d: "Técnicas para no explotar en el momento de más tensión." },
+              { t: "Frases que NO ayudan — y su reemplazo", d: "Las palabras exactas que generan conflicto y cómo cambiarlas." },
             ].map((b, i) => (
               <div key={i} className="relative bg-white rounded-2xl p-7 border" style={{ borderColor: "var(--gold-soft)", boxShadow: "var(--shadow-card)" }}>
                 <span className="absolute top-4 right-4 text-[11px] font-bold px-3 py-1.5 rounded-full" style={{ background: "var(--danger)", color: "#fff" }}>
