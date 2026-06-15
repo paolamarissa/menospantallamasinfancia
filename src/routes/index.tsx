@@ -80,16 +80,14 @@ function SalesPage() {
             <div className="flex flex-wrap items-center gap-4">
               <CTA />
               <div className="flex items-center gap-2 text-sm" style={{ color: "var(--text-secondary)" }}>
-                <Lock size={16} /> Pago seguro · Garantía 30 días
+                <Lock size={16} /> Pago seguro · Garantía 7 días
               </div>
             </div>
             <div className="flex items-center gap-3 mt-7">
               <div className="flex">
                 {[0,1,2,3,4].map(i => <Star key={i} size={18} fill="var(--gold)" stroke="var(--gold)" />)}
               </div>
-              <span className="text-sm" style={{ color: "var(--text-secondary)" }}>
-                +2.400 madres ya lo leyeron
-              </span>
+              <span className="text-sm" style={{ color: "var(--text-secondary)" }}>              </span>
             </div>
           </div>
           <div className="relative fade-up">
