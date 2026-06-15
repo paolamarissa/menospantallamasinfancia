@@ -256,7 +256,7 @@ function SalesPage() {
       </section>
 
       {/* NO ES PARA TI */}
-      <section className="section-y">
+      <section className="section-y" style={{ background: "linear-gradient(180deg, #fff, color-mix(in oklab, var(--gold-soft) 35%, white))" }}>
         <div className="container-page max-w-3xl">
           <SectionHeading kicker="Honestidad primero" title="Este libro NO es para ti si…" />
           <ul className="space-y-4 bg-white rounded-2xl p-7" style={{ boxShadow: "var(--shadow-card)" }}>
