@@ -26,7 +26,7 @@ export const Route = createFileRoute("/")({
 function CTA({ children = "Quiero mi ejemplar — $12.99", size = "lg" }: { children?: React.ReactNode; size?: "lg" | "md" }) {
   return (
     <a
-      href="#comprar"
+      href="https://pay.hotmart.com/G106328685V"
       className="btn-cta btn-cta-hover"
       style={{
         minWidth: size === "lg" ? 280 : 240,
