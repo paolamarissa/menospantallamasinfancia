@@ -80,15 +80,15 @@ function SalesPage() {
             <div className="flex flex-wrap items-center gap-4">
               <CTA />
               <div className="flex items-center gap-2 text-sm" style={{ color: "var(--text-secondary)" }}>
-                <Lock size={16} /> Pago seguro · Garantía 15 días
+                <Lock size={16} /> Pago seguro · Garantía 30 días
               </div>
             </div>
-            <div className="flex items-center gap-3 mt-7">
+           <!-- <div className="flex items-center gap-3 mt-7">
               <div className="flex">
                 {[0,1,2,3,4].map(i => <Star key={i} size={18} fill="var(--gold)" stroke="var(--gold)" />)}
               </div>
               <span className="text-sm" style={{ color: "var(--text-secondary)" }}>              </span>
-            </div>
+            </div> -->
           </div>
           <div className="relative fade-up">
             <img
@@ -246,7 +246,7 @@ function SalesPage() {
               Garantía de 7 días, sin preguntas.
             </h3>
             <p className="text-[17px]" style={{ color: "var(--text-secondary)" }}>
-              Léelo, aplícalo durante una semana. Si en 7 días no ves un cambio real en casa,
+              Léelo, aplícalo durante una semana. Si en 30 días no ves un cambio real en casa,
               te devuelvo cada centavo. Sin formularios, sin explicaciones.
             </p>
           </div>
