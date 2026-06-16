@@ -83,12 +83,12 @@ function SalesPage() {
                 <Lock size={16} /> Pago seguro · Garantía 30 días
               </div>
             </div>
-           <!-- <div className="flex items-center gap-3 mt-7">
+            {/* <div className="flex items-center gap-3 mt-7">
               <div className="flex">
                 {[0,1,2,3,4].map(i => <Star key={i} size={18} fill="var(--gold)" stroke="var(--gold)" />)}
               </div>
               <span className="text-sm" style={{ color: "var(--text-secondary)" }}>              </span>
-            </div> -->
+            </div> */}
           </div>
           <div className="relative fade-up">
             <img
