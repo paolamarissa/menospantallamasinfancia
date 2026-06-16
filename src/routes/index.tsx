@@ -243,7 +243,7 @@ function SalesPage() {
               <Shield size={44} color="var(--gold-deep)" strokeWidth={1.8} />
             </div>
             <h3 className="font-display font-bold text-[24px] md:text-[28px] mb-3">
-              Garantía de 7 días, sin preguntas.
+              Garantía de 30 días, sin preguntas.
             </h3>
             <p className="text-[17px]" style={{ color: "var(--text-secondary)" }}>
               Léelo, aplícalo durante una semana. Si en 30 días no ves un cambio real en casa,
