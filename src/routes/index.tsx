@@ -80,7 +80,7 @@ function SalesPage() {
             <div className="flex flex-wrap items-center gap-4">
               <CTA />
               <div className="flex items-center gap-2 text-sm" style={{ color: "var(--text-secondary)" }}>
-                <Lock size={16} /> Pago seguro · Garantía 7 días
+                <Lock size={16} /> Pago seguro · Garantía 15 días
               </div>
             </div>
             <div className="flex items-center gap-3 mt-7">
@@ -474,8 +474,8 @@ const FAQS = [
   { q: "¿Funciona si mi hijo ya tiene 9 años y lleva años con pantalla?", a: "Sí. El método está diseñado precisamente para hábitos ya instalados. La franja 5-9 años es la edad donde los cambios todavía son rápidos si los adultos sostenemos las reglas con calma." },
   { q: "¿Necesito que mi pareja participe?", a: "Ayuda mucho, pero no es obligatorio. El libro incluye una guía corta para alinear a la pareja y, si no es posible, también funciona aplicándolo solo tú." },
   { q: "¿Cuánto tiempo me toma al día?", a: "El plan está pensado para madres trabajadoras: 15-20 minutos al día durante 7 días. No vas a tener que reorganizar tu vida para aplicarlo." },
-  { q: "¿Lo recibo de forma física?", a: "Es un ebook digital + materiales descargables. Lo recibes por correo en menos de 5 minutos después de comprar, y lo conservas para siempre." },
-  { q: "¿Y si no me funciona?", a: "Tienes 30 días para pedir la devolución del 100% sin preguntas. Solo me escribes y te devuelvo el dinero." },
+  { q: "¿Lo recibo de forma física?", a: "Es un ebook digital descargable. Lo recibes por correo en menos de 5 minutos después de comprar, y lo conservas para siempre." },
+  { q: "¿Y si no me funciona?", a: "Tienes 15 días para pedir la devolución del 100% sin preguntas. Solo me escribes y te devuelvo el dinero." },
 ];
 
 function FAQ() {
