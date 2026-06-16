@@ -316,7 +316,7 @@ function SalesPage() {
             ].map((b, i) => (
               <div key={i} className="relative bg-white rounded-2xl p-7 border" style={{ borderColor: "var(--gold-soft)", boxShadow: "var(--shadow-card)" }}>
                 <span className="absolute top-4 right-4 text-[11px] font-bold px-3 py-1.5 rounded-full" style={{ background: "var(--danger)", color: "#fff" }}>
-                  GRATIS HOY
+                  GRATIS
                 </span>
                 <Gift size={32} color="var(--gold-deep)" className="mb-4" />
                 <h4 className="font-display font-semibold text-[19px] mb-3 pr-20">{b.t}</h4>
