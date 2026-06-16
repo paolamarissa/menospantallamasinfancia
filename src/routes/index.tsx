@@ -472,7 +472,7 @@ function SalesPage() {
 
 const FAQS = [
   { q: "¿Funciona si mi hijo ya tiene 9 años y lleva años con pantalla?", a: "Sí. El método está diseñado precisamente para hábitos ya instalados. La franja 5-9 años es la edad donde los cambios todavía son rápidos si los adultos sostenemos las reglas con calma." },
-  { q: "¿Necesito que mi pareja participe?", a: "Ayuda mucho, pero no es obligatorio. El libro incluye una guía corta para alinear a la pareja y, si no es posible, también funciona aplicándolo solo tú." },
+  { q: "¿Necesito que mi pareja participe?", a: "Ayuda mucho, pero no es obligatorio. También funciona aplicándolo solo tú." },
   { q: "¿Cuánto tiempo me toma al día?", a: "El plan está pensado para madres trabajadoras: 15-20 minutos al día durante 7 días. No vas a tener que reorganizar tu vida para aplicarlo." },
   { q: "¿Lo recibo de forma física?", a: "Es un ebook digital descargable. Lo recibes por correo en menos de 5 minutos después de comprar, y lo conservas para siempre." },
   { q: "¿Y si no me funciona?", a: "Tienes 15 días para pedir la devolución del 100% sin preguntas. Solo me escribes y te devuelvo el dinero." },
