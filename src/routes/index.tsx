@@ -321,10 +321,6 @@ function SalesPage() {
                 <Gift size={32} color="var(--gold-deep)" className="mb-4" />
                 <h4 className="font-display font-semibold text-[19px] mb-3 pr-20">{b.t}</h4>
                 <p className="mb-4" style={{ color: "var(--text-secondary)" }}>{b.d}</p>
-                <div>
-                  <span className="text-sm" style={{ color: "var(--text-secondary)" }}>Valor: </span>
-                  <span className="font-display font-bold text-lg line-through" style={{ color: "var(--gold-deep)" }}>{b.val}</span>
-                </div>
               </div>
             ))}
           </div>
