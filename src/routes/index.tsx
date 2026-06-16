@@ -284,7 +284,7 @@ function SalesPage() {
           <SectionHeading kicker="Lo que recibes" title="Todo lo que necesitas para tus 7 días.">
             Material listo para abrir y aplicar hoy mismo.
           </SectionHeading>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {[
               { icon: <BookOpen />, t: "Ebook E.C.E.", d: "20 páginas, claras y al grano." },
               { icon: <Calendar />, t: "Plan de 7 días", d: "Una acción por día, paso a paso." },
