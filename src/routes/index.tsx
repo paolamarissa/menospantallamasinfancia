@@ -297,7 +297,7 @@ function SalesPage() {
                 <div className="w-14 h-14 rounded-2xl grid place-items-center mx-auto mb-4" style={{ background: "var(--cream)", color: "var(--gold-deep)" }}>
                   {c.icon}
                 </div>
-                <h4 className="font-display font-semibold text-[17px] mb-2">{c.t}</h4>
+                <h3 className="font-display font-semibold text-[17px] mb-2">{c.t}</h3>
                 <p className="text-sm" style={{ color: "var(--text-secondary)" }}>{c.d}</p>
               </div>
             ))}
@@ -319,7 +319,7 @@ function SalesPage() {
                   GRATIS
                 </span>
                 <Gift size={32} color="var(--gold-deep)" className="mb-4" />
-                <h4 className="font-display font-semibold text-[19px] mb-3 pr-20">{b.t}</h4>
+                <h3 className="font-display font-semibold text-[19px] mb-3 pr-20">{b.t}</h3>
                 <p className="mb-4" style={{ color: "var(--text-secondary)" }}>{b.d}</p>
               </div>
             ))}
@@ -333,7 +333,7 @@ function SalesPage() {
           <SectionHeading kicker="Hagamos números" title="Lo que cuesta seguir igual vs. lo que cuesta cambiar." />
           <div className="grid md:grid-cols-[1fr_auto_1fr] gap-6 items-center max-w-5xl mx-auto">
             <div className="rounded-2xl p-7" style={{ background: "color-mix(in oklab, var(--danger) 10%, white)", border: "1px solid color-mix(in oklab, var(--danger) 30%, white)" }}>
-              <h4 className="font-display font-semibold text-lg mb-5">Seguir como hoy</h4>
+              <h3 className="font-display font-semibold text-lg mb-5">Seguir como hoy</h3>
               <ul className="space-y-3 text-[15px]">
                 {[
                   ["1 sesión de terapia familiar", "$80"],
@@ -351,7 +351,7 @@ function SalesPage() {
               VS
             </div>
             <div className="rounded-2xl p-7 text-center" style={{ background: "linear-gradient(180deg, var(--cream), #fff)", border: "2px solid var(--gold)" }}>
-              <h4 className="font-display font-semibold text-lg mb-2">Esta solución</h4>
+              <h3 className="font-display font-semibold text-lg mb-2">Esta solución</h3>
               <div className="text-sm mb-4" style={{ color: "var(--text-secondary)" }}>Acceso inmediato y para siempre</div>
               <div className="font-display font-bold leading-none mb-3" style={{ fontSize: "72px", color: "var(--gold-deep)" }}>
                 $12.99
