@@ -9,15 +9,54 @@ import heroImg from "@/assets/hero-mother-child.jpg";
 import phoneImg from "@/assets/phone-table.jpg";
 import familyImg from "@/assets/closing-family.jpg";
 
+const SITE_URL = "https://menospantallamasinfancia.lovable.app";
+
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       { title: "7 días sin peleas de pantallas — Ebook para madres" },
       { name: "description", content: "El método E.C.E. para que tu hijo de 5-9 años use menos pantallas en 7 días, sin gritos ni culpa. Hecho por y para madres trabajadoras." },
-      { property: "og:title", content: "7 días sin peleas de pantallas" },
+      { property: "og:title", content: "7 días sin peleas de pantallas — Ebook para madres" },
       { property: "og:description", content: "Método práctico y cálido para recuperar la paz en casa." },
+      { property: "og:url", content: SITE_URL + "/" },
       { property: "og:image", content: heroImg },
       { name: "twitter:image", content: heroImg },
+    ],
+    links: [{ rel: "canonical", href: SITE_URL + "/" }],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Product",
+          name: "7 días sin peleas de pantallas",
+          description:
+            "Ebook con el método E.C.E. para reducir el uso de pantallas en niños de 5-9 años en 7 días, sin gritos ni culpa.",
+          brand: { "@type": "Brand", name: "Menos pantallas, más infancia" },
+          author: { "@type": "Person", name: "Mariana" },
+          offers: {
+            "@type": "Offer",
+            price: "12.99",
+            priceCurrency: "USD",
+            availability: "https://schema.org/InStock",
+            url: "https://pay.hotmart.com/G106328685V",
+          },
+        }),
+      },
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: [
+            { "@type": "Question", name: "¿Funciona si mi hijo ya tiene 9 años y lleva años con pantalla?", acceptedAnswer: { "@type": "Answer", text: "Sí. El método está diseñado precisamente para hábitos ya instalados. La franja 5-9 años es la edad donde los cambios todavía son rápidos si los adultos sostenemos las reglas con calma." } },
+            { "@type": "Question", name: "¿Necesito que mi pareja participe?", acceptedAnswer: { "@type": "Answer", text: "Ayuda mucho, pero no es obligatorio. También funciona aplicándolo solo tú." } },
+            { "@type": "Question", name: "¿Cuánto tiempo me toma al día?", acceptedAnswer: { "@type": "Answer", text: "El plan está pensado para madres trabajadoras: 15-20 minutos al día durante 7 días. No vas a tener que reorganizar tu vida para aplicarlo." } },
+            { "@type": "Question", name: "¿Lo recibo de forma física?", acceptedAnswer: { "@type": "Answer", text: "Es un ebook digital descargable. Lo recibes por correo en menos de 5 minutos después de comprar, y lo conservas para siempre." } },
+            { "@type": "Question", name: "¿Y si no me funciona?", acceptedAnswer: { "@type": "Answer", text: "Tienes 15 días para pedir la devolución del 100% sin preguntas. Solo me escribes y te devuelvo el dinero." } },
+          ],
+        }),
+      },
     ],
   }),
   component: SalesPage,

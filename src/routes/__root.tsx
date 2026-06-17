@@ -77,17 +77,16 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "7 días sin peleas de pantallas — Para madres que quieren paz en casa" },
+      { title: "Menos pantallas, más infancia — Ebook para madres" },
       { name: "description", content: "Ebook práctico para madres trabajadoras: el método E.C.E. para reducir el uso de pantallas en niños de 5-9 años sin gritos ni culpa." },
       { name: "author", content: "Mariana" },
-      { property: "og:title", content: "7 días sin peleas de pantallas — Para madres que quieren paz en casa" },
+      { property: "og:title", content: "Menos pantallas, más infancia — Ebook para madres" },
       { property: "og:description", content: "Ebook práctico para madres trabajadoras: el método E.C.E. para reducir el uso de pantallas en niños de 5-9 años sin gritos ni culpa." },
       { property: "og:type", content: "website" },
+      { property: "og:site_name", content: "Menos pantallas, más infancia" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:title", content: "7 días sin peleas de pantallas — Para madres que quieren paz en casa" },
+      { name: "twitter:title", content: "Menos pantallas, más infancia — Ebook para madres" },
       { name: "twitter:description", content: "Ebook práctico para madres trabajadoras: el método E.C.E. para reducir el uso de pantallas en niños de 5-9 años sin gritos ni culpa." },
-      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/bada4b72-7814-4e32-b687-a75470ac3b7c" },
-      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/bada4b72-7814-4e32-b687-a75470ac3b7c" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
@@ -102,6 +101,29 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       {
         type: "text/javascript",
         children: "!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js'); fbq('init', '1350696490352718'); fbq('track', 'PageView');",
+      },
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          name: "Menos pantallas, más infancia",
+          url: "https://menospantallamasinfancia.lovable.app",
+          author: {
+            "@type": "Person",
+            name: "Mariana",
+          },
+        }),
+      },
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Person",
+          name: "Mariana",
+          jobTitle: "Autora",
+          url: "https://menospantallamasinfancia.lovable.app",
+        }),
       },
     ],
   }),
